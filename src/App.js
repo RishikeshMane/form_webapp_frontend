@@ -32,9 +32,9 @@ function App() {
 };
 
   return (
-    <div className="App list-group-item  justify-content-center align-items-center mx-auto" style={{"width":"400px", "backgroundColor":"white", "marginTop":"15px"}} >
-      <h1 className="card text-white bg-primary mb-1" styleName="max-width: 20rem;">Free Up Questions</h1>
-      <div className="for-img"></div>
+    <div className="App list-group-item  justify-content-center align-items-center mb-auto " style={{"backgroundColor":"white","marginTop":"100px"}} >
+      <h1 className="card text-white bg-primary mb-auto">Free Up Questions</h1>
+      
      <div className="card-body">
       <h5 className="card text-white bg-dark mb-3">submit question</h5>
       <span className="card-text"> 
