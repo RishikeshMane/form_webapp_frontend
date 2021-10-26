@@ -15,7 +15,10 @@ function App() {
   const [rollno, setRoll] = useState('')
   const [question, setDesc] = useState('')
   
-    
+    const doalert=()=>{
+      alert("sent successfully");
+      window.location.reload(false);
+    }
 
   // Read all todos
   useEffect(() => {
@@ -41,7 +44,7 @@ function App() {
         <input className="mb-2 form-control titleIn" onChange={event => setTitle(event.target.value)} placeholder='Name'/> 
         <input className="mb-2 form-control desIn" onChange={event => setRoll(event.target.value)}   placeholder='Roll NO'/>
         <input className="mb-2 form-control desIn" onChange={event => setDesc(event.target.value)}   placeholder='Question'/>
-      <button className="btn btn-outline-primary mx-2 mb-3 " style={{'borderRadius':'50px',"font-weight":"bold","background":"blue","color":"white"}}  onClick={addTodoHandler}>Submit</button>
+      <button className="btn btn-outline-primary mx-2 mb-3 " style={{'borderRadius':'50px',"font-weight":"bold","background":"blue","color":"white"}}  onClick={ (event)=>{addTodoHandler(event);doalert();}}>Submit</button>
       </span>
       
       <div >
