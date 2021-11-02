@@ -21,12 +21,12 @@ function App() {
     }
 
   // Read all todos
-  useEffect(() => {
-    axios.get('http://localhost:8000/api/todo')
-      .then(res => {
-        setTodoList(res.data)
-      })
-  });
+  // useEffect(() => {
+  //   axios.get('http://localhost:8000/api/todo')
+  //     .then(res => {
+  //       setTodoList(res.data)
+  //     })
+  // });
 
   // Post a todo
   const addTodoHandler = () => {
