@@ -35,15 +35,15 @@ function App() {
 };
 
   return (
-    <div className="App list-group-item  justify-content-center align-items-center  row justify-content-md-center" style={{"backgroundColor":"white","marginTop":"100px"}} >
-      <h1 className="card text-white bg-primary col-md-auto">Free Up Questions</h1>
+    <div className="App list-group-item  justify-content-center align-items-center  row justify-content-md-center mx-auto" style={{"backgroundColor":"white","marginTop":"100px"}} >
+      <h1 className="card text-white bg-primary col-md-auto mx-3">Free Up Questions</h1>
       
      <div className="card-body">
-      <h5 className="card text-white bg-dark col-md-auto">submit question</h5>
+      <h5 className="card text-white bg-dark col-md-auto mx-3">submit question</h5>
       <span className="card-text"> 
-        <input className="col-md-auto form-control titleIn" onChange={event => setTitle(event.target.value)} placeholder='Name'/> 
-        <input className="col-md-auto form-control desIn" onChange={event => setRoll(event.target.value)}   placeholder='Roll NO'/>
-        <input className="col-md-auto form-control desIn" onChange={event => setDesc(event.target.value)}   placeholder='Question'/>
+        <input className="col-md-auto mx-auto form-control titleIn" onChange={event => setTitle(event.target.value)} placeholder='Name'/> 
+        <input className="col-md-auto mx-auto form-control desIn" onChange={event => setRoll(event.target.value)}   placeholder='Roll NO'/>
+        <input className="col-md-auto mx-auto form-control desIn" onChange={event => setDesc(event.target.value)}   placeholder='Question'/>
       <button className="btn btn-outline-primary w-50 p-3 " style={{'borderRadius':'50px',"font-weight":"bold","background":"black","color":"white"}}  onClick={ (event)=>{addTodoHandler(event);doalert();}}>Submit</button>
       </span>
       
