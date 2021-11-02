@@ -30,7 +30,7 @@ function App() {
 
   // Post a todo
   const addTodoHandler = () => {
-    axios.post('https://radiant-meadow-85127.herokuapp.com/', { 'title': name, 'question': question,'rollno':rollno})
+    axios.post('https://decentflex.herokuapp.com/', { 'title': name, 'question': question,'rollno':rollno})
       .then(res => console.log(res))
 };
 
